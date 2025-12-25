@@ -128,6 +128,8 @@ span{
 
 .home-content p{
     font-size: 1.6rem;
+    text-align: justify; /* Thêm dòng này */
+    line-height: 1.6;
 }
 
 .home-img{
@@ -466,4 +468,73 @@ span{
     .contact form .input-box input {
         width: 100%;
     }
+}
+header.sticky {
+    background: #161616;
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    padding: 1rem 9%;
+}
+/* Thiết lập lớp nền mờ */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px); /* Làm mờ nền trang web */
+}
+
+.modal-content {
+    background-color: #000; /* Tiệp màu với web của bạn */
+    margin: 15% auto;
+    padding: 40px;
+    border: 2px solid #b74b4b; /* Màu đỏ chủ đạo của bạn */
+    width: 90%;
+    max-width: 450px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 30px #b74b4b;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #b74b4b;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.social-icons-modal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tận dụng lại style social-icons bạn đã có */
+.social-icons-modal a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 0.2rem solid #b74b4b;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #b74b4b;
+    transition: 0.3s ease;
+}
+
+.social-icons-modal a:hover {
+    background: #b74b4b;
+    color: #000;
+    box-shadow: 0 0 20px #b74b4b;
+    transform: translateY(-5px);
 }
